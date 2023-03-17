@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Links</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #F5F5F5;
+			font-family: Arial, sans-serif;
+		}
+		
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+		
+		.photo {
+			width: 200px;
+			height: 200px;
+			background-image: url('image.jpg');
+			background-size: cover;
+			background-position: center;
+			border-radius: 50%;
+			margin-bottom: 20px;
+		}
+		
+		.btn {
+			display: block;
+			width: 200px;
+			height: 50px;
+			background-color: #0077B5; /* LinkedIn blue */
+			color: #FFFFFF;
+			text-align: center;
+			line-height: 50px;
+			font-size: 18px;
+			font-weight: bold;
+			text-transform: uppercase;
+			border-radius: 5px;
+			margin-bottom: 20px;
+			text-decoration: none;
+		}
+		
+		.btn:nth-child(2) {
+			background-color: #0077B5; /* Instagram red */
+		}
+		
+		.btn:nth-child(3) {
+			background-color: #0077B5; /* Twitter blue */
+		}
+		
+		.btn:hover {
+			background-color: #0077B5;
+		}
+		
+		@media (max-width: 600px) {
+			.container {
+				height: auto;
+				padding: 20px;
+			}
+			
+			.photo {
+				width: 150px;
+				height: 150px;
+				margin-bottom: 5px;
+			}
+			
+			.btn {
+				width: 100%;
+				margin-bottom: 25px;
+			}
+		}
+		
+		.name {
+			font-size: 24px;
+			font-weight: bold;
+			margin-top: 20px;
+			margin-bottom: 25px;
+		}
+		
+		.icon {
+			margin-right: 10px;
+			font-size: 24px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="photo"></div>
+		<h1 class="name">Mian Muneeb</h1>
+		       <a href="https://linkedin.com/" target="_blank" class="btn"><span class="icon fab fa-linkedin"></span>LinkedIn</a>
+		       <a href="https://facebook.com/" target="_blank" class="btn"><span class="icon fab fa-facebook"></span>Facebook</a>
+		       <a href="https://instagram.com/" target="_blank" class="btn"><span class="icon fab fa-instagram"></span>Instagram</a>
+		       <a href="https://twitter.com/" target="_blank" class="btn"><span class="icon fab fa-twitter"></span>Twitter</a>
+                </div>
+	</div>
+</body>
+</html>
